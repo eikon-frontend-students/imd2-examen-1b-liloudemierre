@@ -75,8 +75,32 @@ video {
 
 /* 01. Sélecteurs CSS */
 
-/* 02. Centrer horizontalement */
+h3,
+h4 {
+  font-family: Libre Baskerville;
+}
 
+.section-sport h4 {
+  color: #78290f;
+}
+
+.section-culture h4 {
+  color: #15616d;
+}
+
+.section-regions .first {
+  font-weight: bold;
+}
+
+.first.highlighted {
+  background: #faf0ca;
+}
+
+/* 02. Centrer horizontalement */
+.calltoaction-container {
+  display: flex;
+  justify-content: center;
+}
 .calltoaction {
   margin-bottom: 15px;
   padding: 15px 30px;
@@ -84,14 +108,15 @@ video {
   border: 1px solid #c1121f;
   text-transform: uppercase;
 }
-
 .link {
-  width: 250px;
-  padding: 15px 0;
+  width: fit-content;
+  padding: 15px 50px;
   background: #003049;
   color: #fdf0d5;
   font-family: "Libre Baskerville";
   text-transform: uppercase;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* 03. Centrer verticalement */
@@ -103,6 +128,8 @@ video {
   padding: 20px;
   border-radius: 10px;
   background: #669bbc;
+  display: flex;
+  align-items: center;
 }
 
 .button {
@@ -111,6 +138,46 @@ video {
   background: #780000;
   color: #fdf0d5;
   text-align: center;
+  padding: 20px 15px;
 }
 
 /* 04. Intégration */
+
+.fond {
+  background: #f7fafd;
+  display: flex;
+  width: 634px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+.section-card {
+  background-color: white;
+  width: 270px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.content {
+  padding: 9px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.content h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
